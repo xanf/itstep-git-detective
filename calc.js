@@ -1,6 +1,6 @@
 // Розрахунок вартості бронювання переговорки.
 
-const RATES = { A: 150, B: 300, C: 200 };
+const RATES = { A: 150, B: 300, C: 200 }; // грн/год
 
 function hours(start, end) {
   const [sh, sm] = start.split(":").map(Number);
