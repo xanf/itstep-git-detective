@@ -11,7 +11,8 @@ function hours(start, end) {
 function cost(room, start, end) {
   const h = hours(start, end);
   if (h <= 0) throw new Error("Кінець має бути пізніше за початок");
-  return Math.round(RATES[room] * h);
+  const total = RATES[room] * h;
+  return Math.round(total);
 }
 
 module.exports = { hours, cost, RATES };
